@@ -1,3 +1,4 @@
+{ system ? builtins.currentSystem or "unknown-system" }:
 (import
   (
     let lock = builtins.fromJSON (builtins.readFile ./flake.lock); in
@@ -6,5 +7,5 @@
       sha256 = lock.nodes.flake-compat.locked.narHash;
     }
   )
-  { src = ./.; }
+  { src = ./.; system = system; }
 ).defaultNix
