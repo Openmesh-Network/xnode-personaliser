@@ -34,17 +34,17 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1722813957,
-        "narHash": "sha256-IAoYyYnED7P8zrBFMnmp7ydaJfwTnwcnqxUElC1I26Y=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "cb9a96f23c491c081b38eab96d22fa958043c9fa",
+        "lastModified": 1722846632,
+        "narHash": "sha256-5k0J/LoFlgeVsEoXMsSJK1sACQoydDbVLzhWdKHF51M=",
+        "owner": "Openmesh-Network",
+        "repo": "Xnodepkgs",
+        "rev": "60b010d818129efb4708f29a96d28d979fe87fe5",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
+        "owner": "Openmesh-Network",
+        "ref": "dev",
+        "repo": "Xnodepkgs",
         "type": "github"
       }
     },

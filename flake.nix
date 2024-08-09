@@ -2,7 +2,7 @@
   description = "A well-defined environemnt script importer and execution engine for XnodeOS/Xnode integration environments";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:Openmesh-Network/Xnodepkgs/dev";
 
     flake-utils.url = "github:numtide/flake-utils";
 
