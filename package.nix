@@ -13,13 +13,12 @@
     src = package-src;
 
     inputs = with pkgs; [ jq curl gnugrep ];
-    script = (
-      pkgs.writeScriptBin package-name (
+    script = ( pkgs.writeScriptBin package-name (
         builtins.readFile "${src}/src/xnode-personaliser.sh"
+        )
       ).overrideAttrs(old: {
-          buildCommand = "${old.buildCommand}\n patchShebangs $out";
-        });
-    );
+        buildCommand = "${old.buildCommand}\n patchShebangs $out";
+      });
   in
   pkgs.symlinkJoin {
     name = name;
