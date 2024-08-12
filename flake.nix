@@ -14,7 +14,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
         pkg-name = "xnode-personaliser";
-        pkg-buildInputs = with pkgs; [ jq curl ];
+        pkg-buildInputs = with pkgs; [ jq curl gzip ];
         pkg-script = (pkgs.writeScriptBin pkg-name (builtins.readFile ./src/xnode-personaliser.sh)).overrideAttrs(old: {
           buildCommand = "${old.buildCommand}\n patchShebangs ''$out";
         });
