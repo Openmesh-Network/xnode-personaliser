@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-SCRIPT_CONTENTS=$(grep -oE 'XNODE_PERSONALISER_SCRIPT=\S+' /proc/cmdline | cut -d= -f2-)
+SCRIPT_CONTENTS=$( grep -oE 'XNODE_PERSONALISER_SCRIPT=\S+' /proc/cmdline | cut -d= -f2- )
 
 echo "Found contents: " $SCRIPT_CONTENTS
 
